@@ -17,7 +17,7 @@ Projetos e desafios extras encontrados na Biblioteca Explorer, da Rocketseat.
 <br>
 
 <p align="center">
-  <img alt="desafio extra pricing table" src="./assets/preview1.png" width="100%">
+  <img alt="desafio extra pricing table" src="./assets/preview1.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
