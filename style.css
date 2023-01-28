@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-grey: #F9FBFC;
+    --blue-color: #1d539e;
+    --yellow-color: #ffcc29;
+    --light-font: #828799;
+    --dark-font: #1e2338;
+}
+
+body {
+    background: var(--bg-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 10rem auto 11rem;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+
+    background-color: var(--blue-color);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+
+    gap: 2rem;
+}
+
+.main-card,
+.side-card {
+    height: 47rem;
+    width: 35rem;
+    background-color: white;
+    border-radius: .8rem;
+
+    padding: 3rem 3rem;
+
+    box-shadow: 0 .5rem 1rem var(--light-font);
+}
+
+.main-card {
+    scale: 1.03;
+    padding: 2rem 3rem;
+}
+
+.line {
+    border: .01rem solid #eeeeee;
+    margin: 2rem 0 2rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* buttons */
+.side-card button {
+    width: 29.6rem;
+    height: 5rem;
+
+    border: 1px solid var(--blue-color);
+    border-radius: 1rem;
+
+    background-color: white;
+    color: var(--blue-color);
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.side-card button:hover {
+    border: 1px solid var(--blue-color);
+    color: white;
+    background-color: var(--blue-color);
+}
+
+.side-card button:active {
+    border: 1px solid #194788;
+    background-color: #194788;
+}
+
+.main-card button {
+    width: 29.6rem;
+    height: 5rem;
+
+    border: 1px solid var(--blue-color);
+    border-radius: 1rem;
+
+    background-color: var(--blue-color);
+    color: white;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    scale: 1.03;
+}
+
+.main-card button:hover {
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    background-color: var(--yellow-color);
+}
+
+.main-card button:active {
+    background-color: #e0b834;
+}
+
+#button1 {
+    margin-top: 11rem;
+}
+
+#button2 {
+    margin-top: 7rem;
+}
+
+#button3 {
+    margin-top: 5rem;
+}
+
+/* fonts and colors */
+.header h1,
+p {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.5rem;
+    color: white;
+
+    text-align: center;
+}
+
+.header p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+    margin: 2rem 0 6.5rem 0;
+
+    width: 53rem;
+
+    text-decoration: underline;
+}
+
+.main h2 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--dark-font);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+h2 span {
+    width: 9.4rem;
+    height: 3.2rem;
+    background-color: #1d539e;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10rem;
+    padding: .4rem 0 0 2.3rem;
+}
+
+.main h1 {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4.9rem;
+    color: var(--dark-font);
+}
+
+.main h1 span {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--light-font)
+}
+
+#price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--dark-font);
+}
+
+.main p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: var(--light-font);
+
+    margin-top: 1.7rem;
+}
+
+.main li {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: var(--light-font);
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16%;
+    z-index: -1;
+
+    border-radius: .8rem .8rem 0 0;
+
+    background-color: var(--yellow-color);
+}
+
+.main-card h2,
+.main-card span,
+.main-card h1,
+.main-card p,
+.main-card .line,
+.main-card ul,
+.main-card li {
+    scale: 1.03;
+}
+
+.main-card h2 {
+    color: var(--blue-color);
+    margin-bottom: 3.5rem;
+}
+
+/* media */
+
+@media (max-width: 1400px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .header p,
+    .header h1 {
+        width: 38rem;
+    }
+
+    .header h1 {
+        line-height: 5rem;
+    }
+}
